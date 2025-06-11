@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина по информатике</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="quiz-logo.svg">
+</head>
+<body>
+    <div class="container">
+        <h1>Викторина по Информатике</h1>
+        <div class="stats">
+            <div class="progress-container">
+                <span class="progress-text">Прогресс:</span>
+                <div class="progress-bar">
+                    <div id="progress" class="progress-fill"></div>
+                </div>
+                <span id="progress-text">0/0</span>
+            </div>
+            <div class="score-container">
+                <span>Счёт: <span id="score">0</span></span>
+            </div>
+        </div>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="explanation" style="display: none;"></div>
+        <div class="button-container">
+            <button id="next">Следующий Вопрос</button>
+            <button id="reset" title="Начать заново"><img src="reset.svg" alt="Reset" width="20" height="20"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
